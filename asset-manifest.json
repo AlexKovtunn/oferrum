@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/oferrum/static/css/main.75789b6d.css",
+    "main.js": "/oferrum/static/js/main.0e34675e.js",
+    "static/media/MAN.png": "/oferrum/static/media/MAN.0ffa91238a9fdd3a354a.png",
+    "static/media/MAN 1.png": "/oferrum/static/media/MAN 1.d18ed399bd8b33eca083.png",
+    "static/media/GTWalsheimPro-Medium.ttf": "/oferrum/static/media/GTWalsheimPro-Medium.bc56cfc10feb515d6622.ttf",
+    "static/media/1.png": "/oferrum/static/media/1.ed5158dac00d058af4f8.png",
+    "static/media/3.png": "/oferrum/static/media/3.98f0dc71a40333e89095.png",
+    "static/media/2.png": "/oferrum/static/media/2.8a34e0289ba9decdc48e.png",
+    "static/media/4.png": "/oferrum/static/media/4.c44b08005ef2b890d55b.png",
+    "static/media/logo.svg": "/oferrum/static/media/logo.873badb55f5bcbbae93f65fd134f6ee2.svg",
+    "index.html": "/oferrum/index.html",
+    "main.75789b6d.css.map": "/oferrum/static/css/main.75789b6d.css.map",
+    "main.0e34675e.js.map": "/oferrum/static/js/main.0e34675e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75789b6d.css",
+    "static/js/main.0e34675e.js"
+  ]
+}
