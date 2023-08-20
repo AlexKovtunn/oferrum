@@ -1,0 +1,104 @@
+@import "./nullstyle.scss";
+// ШРИФТУЛИ
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500&display=swap');
+
+// @font-face {
+// 	font-family: "Gilroy";
+// 	src: url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
+// 	font-weight: 500;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "Gilroy";
+// 	src: url("../assets/fonts/Gilroy-Semibold.ttf") format("truetype");
+// 	font-weight: 500;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: "GT Walsheim Pro";
+	src: url("../assets/fonts/GTWalsheimPro-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+html, body{
+	height: 100%;
+	line-height: 150%;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	scroll-behavior: smooth;
+
+	background: #1D2532;
+}
+
+body{
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 414.902px;
+		height: 414.902px;
+		transform: rotate(11.969deg);
+
+		border-radius: 414.902px;
+		background: linear-gradient(171deg, rgba(95, 56, 255, 0.35) 0%, rgba(255, 14, 222, 0.35) 100%);
+		filter: blur(86px);	
+		
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 32;
+	}
+
+	@media (max-width: 937px) {
+		&:after{
+			width: 237.713px;
+			height: 237.713px;
+			transform: rotate(11.969deg);
+			border-radius: unset;
+			background: linear-gradient(171deg, rgba(95, 56, 255, 0.35) 0%, rgba(255, 14, 222, 0.35) 100%);
+		}
+	}
+}
+
+.body__hidden{
+	overflow: hidden;
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.none{
+	display: none;
+}
+
+//header
+
+@import './components/header.scss';
+
+//hero
+
+@import './components/hero.scss';
+
+//education
+
+@import './components/education.scss';
+
+//modal
+
+@import './components/modal-window.scss';

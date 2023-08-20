@@ -1,0 +1,187 @@
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+    padding: 248px 0 270px;
+
+
+    &:before{
+        content: '';
+        display: block;
+        width: 67.42%;
+        height: 76.75%;
+        background-image: url(../../assets/MAN.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        right: -6.5%;
+        top: 48%;
+        z-index: 1;
+
+        transform: translateY(-50%);
+    }
+}
+.hero__text-title{
+    max-width: 717px;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105%; /* 75.6px */
+    letter-spacing: -2.16px;
+
+    span{
+        font-weight: 700;
+    }
+
+    position: relative;
+    z-index: 20;
+}
+.hero__text-subtitle{
+    margin-top: 35px;
+
+    max-width: 499px;
+
+    color: #CECECE;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+
+    position: relative;
+    z-index: 20;
+}
+.hero__text-btn{
+    margin-top: 72px;
+    max-width: 331px;
+
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    background: var(--gr, linear-gradient(141deg, #1DD844 0%, #CBF62E 100%));
+    box-shadow: 0px 0px 13px 8px rgba(116, 204, 57, 0.25);
+    
+    span{
+        padding: 0 30px;
+
+        color: #242424;
+        text-align: center;
+        font-family: GT Walsheim Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+    }
+
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover{
+        box-shadow: 0px 0px 13px 13px rgba(116, 204, 57, 0.2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero__text{
+        padding: 148px 0 170px;
+        align-items: center;
+
+        &:before{
+            overflow: visible !important;
+            width: 640px;
+            height: 640px;
+            background-image: url('../../assets/MAN 1.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:22%;
+            z-index: 1;
+    
+            //transform: translateY(-50%);
+
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+    }
+    .hero__text-title{
+        max-width: unset;
+        text-align: center;
+    }
+    .hero__text-subtitle{
+        text-align: center;
+        margin-top: 560px;
+    }
+}
+
+@media (max-width: 937px) {
+    .hero__text{
+        padding: 100px 0 70px;
+
+        &:before{
+            width: 450px;
+            height: 450px;
+            top:19%;
+        }
+    }
+    .hero__text-title{
+        max-width: 550px;
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: -0.75px; 
+    }
+    .hero__text-subtitle{
+        max-width: 350px;
+        text-align: center;
+        margin-top: 410px;
+        font-size: 25px;
+    }
+    .hero__text-btn{
+        margin-top: 40px;
+        max-width: 350px;
+    
+        height: 60px;
+    
+        border-radius: 15px;
+        
+        span{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .hero__text{
+        padding: 78.6px 0 50px;
+
+        &:before{
+            width: 320px;
+            height: 320px;
+            top:21%;
+        }
+    }
+    .hero__text-title{
+        max-width: 248px;
+        font-size: 25px;
+    }
+    .hero__text-subtitle{
+        max-width: 240px;
+        margin-top: 348px;
+        font-size: 18px;
+    }
+    .hero__text-btn{
+        max-width: 277px;
+        height: 51px;
+        
+        span{
+            font-size: 16px;
+        }
+    }
+}
